@@ -10,7 +10,7 @@ const routes: Routes = [
     path: 'todos', component: TodoListComponent,
     children: [
       {
-        path: 'create-edit-todo', component: AddEditTodoComponent,
+        path: 'create-edit-todo', component: AddEditTodoComponent, data: { title: 'Heroes List' }
       },
       {
         path: 'display-details', component: TodoDetailsComponent

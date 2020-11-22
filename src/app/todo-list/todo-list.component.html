@@ -2,6 +2,7 @@
 <nav>
     <ul>
       <li><a routerLink="create-edit-todo">Add Edit for date A</a></li>
+      <li><a [routerLink]="['/create-edit-todo', {id:1 , name:'test-edit-create-name'}]"> Go o edit data by passing data</a></li>
     </ul>
 </nav>
 <button (click)= "gotoItems()"> Send id param to add edit</button>
